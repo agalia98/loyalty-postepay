@@ -701,3 +701,403 @@
                 text-align: center;
             }
         }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    FAMILA <span>PostePay</span>
+                </div>
+                <button class="mobile-menu-toggle" style="display: none;">☰</button>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="wallet.html" class="active">Wallet MyMizzica</a></li>
+                        <li><a href="catalogo.html">Catalogo</a></li>
+                        <li><a href="salvadanaio.html">Salvadanaio Poste</a></li>
+                        <li><a href="profilo.html">Profilo</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="container">
+            <div class="dashboard">
+                <div class="sidebar">
+                    <div class="user-info">
+                        <div class="user-avatar">MR</div>
+                        <div class="user-details">
+                            <h3>Mario Rossi</h3>
+                            <p>Card: **** 1234</p>
+                        </div>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="index.html"><i>📊</i> Dashboard</a></li>
+                        <li><a href="wallet.html" class="active"><i>💰</i> Wallet MyMizzica</a></li>
+                        <li><a href="catalogo.html"><i>🎁</i> Catalogo Premi</a></li>
+                        <li><a href="movimenti.html"><i>📃</i> Movimenti</a></li>
+                        <li><a href="salvadanaio.html"><i>🏦</i> Salvadanaio Poste</a></li>
+                        <li><a href="buoni.html"><i>🛒</i> Buoni Spesa</a></li>
+                        <li><a href="carta.html"><i>💳</i> Carta Digitale</a></li>
+                        <li><a href="impostazioni.html"><i>⚙️</i> Impostazioni</a></li>
+                        <li><a href="aiuto.html"><i>❓</i> Aiuto</a></li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="section">
+                        <div class="wallet-header">
+                            <div class="wallet-info">
+                                <h1 class="wallet-title"><i>🎯</i> Wallet MyMizzica</h1>
+                                <div class="wallet-subtitle">Raccolta punti e gestione del tuo credito fedeltà</div>
+                                <div class="wallet-balance">2.530 Punti</div>
+                                <div class="wallet-stats">
+                                    <div class="wallet-stat">
+                                        <div class="wallet-stat-label">Punti accumulati questo mese</div>
+                                        <div class="wallet-stat-value">520 Punti</div>
+                                    </div>
+                                    <div class="wallet-stat">
+                                        <div class="wallet-stat-label">Valore in buoni spesa</div>
+                                        <div class="wallet-stat-value">€ 25,00</div>
+                                    </div>
+                                    <div class="wallet-stat">
+                                        <div class="wallet-stat-label">Valore per Salvadanaio</div>
+                                        <div class="wallet-stat-value">€ 5,06</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wallet-actions">
+                                <button class="btn btn-outline">Trasferisci Punti</button>
+                                <button class="btn">Converti in Buoni</button>
+                            </div>
+                        </div>
+                        
+                        <div class="conversion-info">
+                            <h4>Tassi di conversione Punti MyMizzica</h4>
+                            <p>I tuoi punti possono essere convertiti in diverse modalità:</p>
+                            <div class="conversion-details">
+                                <div class="conversion-item">
+                                    <span class="conversion-item-icon">🛒</span>
+                                    <span>100 Punti = €5,00 in Buoni Spesa</span>
+                                </div>
+                                <div class="conversion-item">
+                                    <span class="conversion-item-icon">🏦</span>
+                                    <span>500 Punti = €1,00 nel Salvadanaio Poste</span>
+                                </div>
+                                <div class="conversion-item">
+                                    <span class="conversion-item-icon">🎁</span>
+                                    <span>Varia in base ai prodotti nel Catalogo Premi</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-navigation">
+                            <button class="tab-button active" data-tab="movimenti">Movimenti Punti</button>
+                            <button class="tab-button" data-tab="utilizzo">Usa Punti</button>
+                            <button class="tab-button" data-tab="risparmio">Salvadanaio</button>
+                        </div>
+                        
+                        <div class="tab-content" id="movimenti">
+                            <ul class="transaction-list">
+                                <li class="transaction-item">
+                                    <div class="transaction-left">
+                                        <div class="transaction-icon shopping">🛒</div>
+                                        <div class="transaction-info">
+                                            <h4>Spesa Famila Via Roma</h4>
+                                            <div class="transaction-date">18 Mar 2025, 16:30</div>
+                                        </div>
+                                    </div>
+                                    <div class="transaction-right">
+                                        <div class="transaction-amount deposit">+50 Punti</div>
+                                        <div class="transaction-balance">Saldo: 2.530 Punti</div>
+                                    </div>
+                                </li>
+                                <li class="transaction-item">
+                                    <div class="transaction-left">
+                                        <div class="transaction-icon wallet">🎁</div>
+                                        <div class="transaction-info">
+                                            <h4>Conversione in Buono Spesa</h4>
+                                            <div class="transaction-date">15 Mar 2025, 12:20</div>
+                                        </div>
+                                    </div>
+                                    <div class="transaction-right">
+                                        <div class="transaction-amount withdrawal">-100 Punti</div>
+                                        <div class="transaction-balance">Saldo: 2.480 Punti</div>
+                                    </div>
+                                </li>
+                                <li class="transaction-item">
+                                    <div class="transaction-left">
+                                        <div class="transaction-icon shopping">🛒</div>
+                                        <div class="transaction-info">
+                                            <h4>Spesa Famila Centro Commerciale</h4>
+                                            <div class="transaction-date">14 Mar 2025, 18:45</div>
+                                        </div>
+                                    </div>
+                                    <div class="transaction-right">
+                                        <div class="transaction-amount deposit">+130 Punti</div>
+                                        <div class="transaction-balance">Saldo: 2.580 Punti</div>
+                                    </div>
+                                </li>
+                                <li class="transaction-item">
+                                    <div class="transaction-left">
+                                        <div class="transaction-icon savings">🏦</div>
+                                        <div class="transaction-info">
+                                            <h4>Trasferimento a Salvadanaio Poste</h4>
+                                            <div class="transaction-date">10 Mar 2025, 09:22</div>
+                                        </div>
+                                    </div>
+                                    <div class="transaction-right">
+                                        <div class="transaction-amount withdrawal">-500 Punti</div>
+                                        <div class="transaction-balance">Saldo: 2.450 Punti</div>
+                                    </div>
+                                </li>
+                                <li class="transaction-item">
+                                    <div class="transaction-left">
+                                        <div class="transaction-icon wallet">🎯</div>
+                                        <div class="transaction-info">
+                                            <h4>Bonus punti weekend speciale</h4>
+                                            <div class="transaction-date">08 Mar 2025, 16:10</div>
+                                        </div>
+                                    </div>
+                                    <div class="transaction-right">
+                                        <div class="transaction-amount deposit">+200 Punti</div>
+                                        <div class="transaction-balance">Saldo: 2.950 Punti</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tab-content" id="utilizzo" style="display: none;">
+                            <div class="transfer-form">
+                                <h3 class="form-title">Converti i tuoi punti MyMizzica</h3>
+                                
+                                <div class="option-cards">
+                                    <div class="option-card selected">
+                                        <div class="option-card-title">Buono Spesa €5</div>
+                                        <div class="option-card-description">Ottieni un buono sconto per la spesa - 100 punti</div>
+                                    </div>
+                                    <div class="option-card">
+                                        <div class="option-card-title">Buono Spesa €10</div>
+                                        <div class="option-card-description">Ottieni un buono sconto per la spesa - 200 punti</div>
+                                    </div>
+                                    <div class="option-card">
+                                        <div class="option-card-title">Versamento Salvadanaio</div>
+                                        <div class="option-card-description">Trasforma 500 punti in €1 di risparmio</div>
+                                    </div>
+                                    <div class="option-card">
+                                        <div class="option-card-title">Prodotti Catalogo</div>
+                                        <div class="option-card-description">Sfoglia il catalogo prodotti</div>
+                                        </div>
+                                </div>
+                                
+                                <div class="form-row" style="margin-top: 20px;">
+                                    <label class="form-label" for="use-amount">Punti da utilizzare</label>
+                                    <input type="number" id="use-amount" class="form-control" min="100" max="2530" value="100" step="100">
+                                </div>
+                                
+                                <div class="points-calculator">
+                                    <div class="calculator-input">
+                                        <label>Valore convertito:</label>
+                                    </div>
+                                    <div class="calculator-result">€5,00 in Buoni Spesa</div>
+                                </div>
+                                
+                                <div class="form-actions">
+                                    <button class="btn btn-outline" style="margin-right: 10px;">Annulla</button>
+                                    <button class="btn">Conferma Conversione</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content" id="risparmio" style="display: none;">
+                            <div class="transfer-form">
+                                <h3 class="form-title">Trasferisci i punti al Salvadanaio</h3>
+                                <p>Converti i tuoi punti MyMizzica in denaro da trasferire direttamente sul tuo Salvadanaio Poste.</p>
+                                
+                                <div class="form-row">
+                                    <label class="form-label">Punti MyMizzica disponibili</label>
+                                    <div>2.530 Punti</div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <label class="form-label" for="conversion-amount">Punti da convertire</label>
+                                    <select id="conversion-amount" class="form-select">
+                                        <option value="500">500 Punti (€1,00)</option>
+                                        <option value="1000">1000 Punti (€2,00)</option>
+                                        <option value="1500">1500 Punti (€3,00)</option>
+                                        <option value="2000">2000 Punti (€4,00)</option>
+                                        <option value="2500">2500 Punti (€5,00)</option>
+                                    </select>
+                                </div>
+                                
+                                <div style="background-color: #f8f9fa; border-radius: 8px; padding: 15px; margin-top: 15px; border-left: 4px solid var(--mizzica-purple);">
+                                    <strong>Nota:</strong> Il trasferimento al Salvadanaio Poste è irreversibile. I punti convertiti genereranno un accredito immediato sul tuo Salvadanaio.
+                                </div>
+                                
+                                <div class="form-actions">
+                                    <button class="btn btn-outline" style="margin-right: 10px;">Annulla</button>
+                                    <button class="btn">Trasferisci al Salvadanaio</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <div class="section-header">
+                            <h2 class="section-title"><i>💡</i> Come accumulare più punti</h2>
+                        </div>
+                        
+                        <div class="wallet-features">
+                            <div class="feature-card">
+                                <div class="feature-card-icon">🛒</div>
+                                <div class="feature-card-title">Spesa nei negozi Famila</div>
+                                <div class="feature-card-description">Guadagna 1 punto MyMizzica ogni euro di spesa nei negozi Famila.</div>
+                            </div>
+                            
+                            <div class="feature-card">
+                                <div class="feature-card-icon">🔥</div>
+                                <div class="feature-card-title">Prodotti in promozione</div>
+                                <div class="feature-card-description">Acquista prodotti in promozione per ottenere punti bonus, fino al triplo dei punti!</div>
+                            </div>
+                            
+                            <div class="feature-card">
+                                <div class="feature-card-icon">📱</div>
+                                <div class="feature-card-title">App Famila</div>
+                                <div class="feature-card-description">Scarica l'app Famila per sbloccare coupon esclusivi e promozioni per punti extra.</div>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top: 20px; padding: 15px; background-color: #f8f9fa; border-radius: 8px; border-left: 4px solid var(--mizzica-purple);">
+                            <strong>Suggerimento:</strong> I punti MyMizzica possono essere utilizzati anche per partecipare a concorsi speciali o per ottenere sconti su servizi partner. Controlla regolarmente la sezione promozioni nell'app o sul sito per scoprire tutte le opportunità disponibili.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Famila & PostePay</h3>
+                    <p style="color: #adb5bd; margin-bottom: 15px;">Programma di loyalty integrato per i tuoi acquisti e risparmi.</p>
+                    <div class="social-links">
+                        <a href="#"><span>f</span></a>
+                        <a href="#"><span>in</span></a>
+                        <a href="#"><span>t</span></a>
+                        <a href="#"><span>ig</span></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Link utili</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="catalogo.html">Catalogo Premi</a></li>
+                        <li><a href="negozi.html">Trova Negozi</a></li>
+                        <li><a href="partner.html">Partner</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Assistenza</h3>
+                    <ul class="footer-links">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contatti.html">Contatti</a></li>
+                        <li><a href="supporto.html">Supporto</a></li>
+                        <li><a href="reclami.html">Reclami</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legale</h3>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="termini.html">Termini di Servizio</a></li>
+                        <li><a href="cookies.html">Cookie Policy</a></li>
+                        <li><a href="regolamento.html">Regolamento</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Famila & PostePay. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tab navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Hide all tab contents
+                    tabContents.forEach(content => {
+                        content.style.display = 'none';
+                    });
+                    
+                    // Remove active class from all buttons
+                    tabButtons.forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Show the tab content corresponding to the clicked button
+                    const tabId = this.getAttribute('data-tab');
+                    document.getElementById(tabId).style.display = 'block';
+                });
+            });
+            
+            // Option card selection
+            const optionCards = document.querySelectorAll('.option-card');
+            optionCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    optionCards.forEach(c => c.classList.remove('selected'));
+                    this.classList.add('selected');
+                    
+                    // Update calculator based on selection
+                    const title = this.querySelector('.option-card-title').textContent;
+                    const calculator = document.querySelector('.calculator-result');
+                    
+                    if (title.includes('€5')) {
+                        calculator.textContent = '€5,00 in Buoni Spesa';
+                        document.getElementById('use-amount').value = 100;
+                    } else if (title.includes('€10')) {
+                        calculator.textContent = '€10,00 in Buoni Spesa';
+                        document.getElementById('use-amount').value = 200;
+                    } else if (title.includes('Salvadanaio')) {
+                        calculator.textContent = '€1,00 nel Salvadanaio Poste';
+                        document.getElementById('use-amount').value = 500;
+                    }
+                });
+            });
+            
+            // Points calculator
+            const amountInput = document.getElementById('use-amount');
+            if (amountInput) {
+                amountInput.addEventListener('input', function() {
+                    const points = parseInt(this.value);
+                    const calculator = document.querySelector('.calculator-result');
+                    const selectedCard = document.querySelector('.option-card.selected');
+                    
+                    if (selectedCard.querySelector('.option-card-title').textContent.includes('€5')) {
+                        const value = (points / 100 * 5).toFixed(2);
+                        calculator.textContent = `€${value} in Buoni Spesa`;
+                    } else if (selectedCard.querySelector('.option-card-title').textContent.includes('€10')) {
+                        const value = (points / 200 * 10).toFixed(2);
+                        calculator.textContent = `€${value} in Buoni Spesa`;
+                    } else if (selectedCard.querySelector('.option-card-title').textContent.includes('Salvadanaio')) {
+                        const value = (points / 500).toFixed(2);
+                        calculator.textContent = `€${value} nel Salvadanaio Poste`;
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

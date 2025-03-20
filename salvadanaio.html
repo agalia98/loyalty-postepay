@@ -881,4 +881,151 @@
                                         <div class="interest-value">€ 0,75</div>
                                     </div>
                                     <div class="interest-row">
-                                        <div class="interest-label">Prossimo accre
+                                        <div class="interest-label">Prossimo accredito interessi</div>
+                                        <div class="interest-value">31 Dic 2025</div>
+                                    </div>
+                                    <div class="interest-row">
+                                        <div class="interest-label">Capitalizzazione interessi</div>
+                                        <div class="interest-value">Annuale</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="growth-projection">
+                                <h3 class="growth-title">Proiezione di crescita</h3>
+                                <p>Con il tuo ritmo attuale di risparmio, ecco come crescerà il tuo Salvadanaio.</p>
+                                
+                                <table class="growth-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Periodo</th>
+                                            <th>Capitale</th>
+                                            <th>Interessi</th>
+                                            <th>Totale</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1 anno</td>
+                                            <td>€ 240,00</td>
+                                            <td>€ 1,80</td>
+                                            <td>€ 241,80</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2 anni</td>
+                                            <td>€ 480,00</td>
+                                            <td>€ 5,41</td>
+                                            <td>€ 485,41</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5 anni</td>
+                                            <td>€ 1.200,00</td>
+                                            <td>€ 30,62</td>
+                                            <td>€ 1.230,62</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <div class="section-header">
+                            <h2 class="section-title"><i>💡</i> Consigli per il tuo risparmio</h2>
+                        </div>
+                        
+                        <p>Ecco alcuni suggerimenti per ottimizzare i tuoi risparmi con il Salvadanaio Poste:</p>
+                        
+                        <ul style="list-style-type: disc; padding-left: 20px; margin-top: 15px;">
+                            <li><strong>Trasferimento automatico:</strong> Imposta un trasferimento periodico dal tuo Wallet MyMizzica al Salvadanaio Poste.</li>
+                            <li><strong>Risparmio da spesa:</strong> Trasferisci una percentuale fissa di ogni spesa effettuata presso i punti vendita Famila.</li>
+                            <li><strong>Accumulo punti speciali:</strong> Partecipa alle promozioni speciali che offrono bonus diretti sul tuo Salvadanaio anziché punti.</li>
+                            <li><strong>Buoni fruttiferi:</strong> Quando il tuo saldo raggiunge € 250, considera di investire in Buoni Fruttiferi Postali per un rendimento maggiore.</li>
+                        </ul>
+                        
+                        <div style="margin-top: 20px; padding: 15px; background-color: #f8f9fa; border-radius: 8px; border-left: 4px solid var(--poste-blue);">
+                            <strong>Sapevi che?</strong> Trasferendo regolarmente i tuoi Punti MyMizzica sul Salvadanaio Poste, puoi ottenere un tasso di interesse vantaggioso sui tuoi risparmi derivanti dagli acquisti quotidiani. Il tuo denaro resta comunque sempre disponibile in caso di necessità.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Famila & PostePay</h3>
+                    <p style="color: #adb5bd; margin-bottom: 15px;">Programma di loyalty integrato per i tuoi acquisti e risparmi.</p>
+                    <div class="social-links">
+                        <a href="#"><span>f</span></a>
+                        <a href="#"><span>in</span></a>
+                        <a href="#"><span>t</span></a>
+                        <a href="#"><span>ig</span></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Link utili</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="catalogo.html">Catalogo Premi</a></li>
+                        <li><a href="negozi.html">Trova Negozi</a></li>
+                        <li><a href="partner.html">Partner</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Assistenza</h3>
+                    <ul class="footer-links">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contatti.html">Contatti</a></li>
+                        <li><a href="supporto.html">Supporto</a></li>
+                        <li><a href="reclami.html">Reclami</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legale</h3>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="termini.html">Termini di Servizio</a></li>
+                        <li><a href="cookies.html">Cookie Policy</a></li>
+                        <li><a href="regolamento.html">Regolamento</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Famila & PostePay. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Tab navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Hide all tab contents
+                    tabContents.forEach(content => {
+                        content.style.display = 'none';
+                    });
+                    
+                    // Remove active class from all buttons
+                    tabButtons.forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Show the tab content corresponding to the clicked button
+                    const tabId = this.getAttribute('data-tab');
+                    document.getElementById(tabId).style.display = 'block';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

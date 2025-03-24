@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo Premi - Famila & PostePay Loyalty</title>
+    <style>
+        /* Utilizzerò gli stili già presenti negli altri file */
+        /* Aggiungerò alcune personalizzazioni specifiche per il catalogo */
+        .gift-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gift-card {
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gift-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .gift-card-logo {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .gift-card-logo img {
+            max-width: 150px;
+            max-height: 80px;
+        }
+
+        .gift-card-details {
+            margin-top: 15px;
+        }
+
+        .gift-card-points {
+            font-weight: bold;
+            color: var(--mizzica-purple);
+        }
+
+        .gift-card-button {
+            margin-top: 10px;
+            width: 100%;
+            padding: 10px;
+            background-color: var(--famila-green);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Header simile alle altre pagine -->
+    </header>
+
+    <div class="main-content">
+        <div class="container">
+            <div class="dashboard">
+                <div class="sidebar">
+                    <!-- Sidebar simile alle altre pagine -->
+                </div>
+                <div class="content">
+                    <div class="section">
+                        <div class="section-header">
+                            <h2 class="section-title"><i>🎁</i> Catalogo Premi</h2>
+                        </div>
+
+                        <div class="gift-cards-grid">
+                            <div class="gift-card">
+                                <div class="gift-card-logo">
+                                    <img src="https://via.placeholder.com/150x80?text=ENI" alt="ENI Gift Card">
+                                </div>
+                                <h3>Gift Card ENI</h3>
+                                <div class="gift-card-details">
+                                    <p>Buono carburante ENI</p>
+                                    <p class="gift-card-points">1.000 Punti MyMizzica</p>
+                                    <p>Valore: € 50,00</p>
+                                    <button class="gift-card-button">Acquista</button>
+                                </div>
+                            </div>
+
+                            <div class="gift-card">
+                                <div class="gift-card-logo">
+                                    <img src="https://via.placeholder.com/150x80?text=Amazon" alt="Amazon Gift Card">
+                                </div>
+                                <h3>Gift Card Amazon</h3>
+                                <div class="gift-card-details">
+                                    <p>Buono regalo Amazon</p>
+                                    <p class="gift-card-points">1.500 Punti MyMizzica</p>
+                                    <p>Valore: € 75,00</p>
+                                    <button class="gift-card-button">Acquista</button>
+                                </div>
+                            </div>
+
+                            <div class="gift-card">
+                                <div class="gift-card-logo">
+                                    <img src="https://via.placeholder.com/150x80?text=Zalando" alt="Zalando Gift Card">
+                                </div>
+                                <h3>Gift Card Zalando</h3>
+                                <div class="gift-card-details">
+                                    <p>Buono shopping Zalando</p>
+                                    <p class="gift-card-points">2.000 Punti MyMizzica</p>
+                                    <p>Valore: € 100,00</p>
+                                    <button class="gift-card-button">Acquista</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Footer simile alle altre pagine -->
+    </footer>
+</body>
+</html>
